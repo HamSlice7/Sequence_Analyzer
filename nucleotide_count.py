@@ -1,18 +1,14 @@
-import sys
 
-fasta_file = sys.argv[1]
-
-print(fasta_file)
 
 def nucleotide_count(file):
+    """
+    From a fasta file, determines the number and percentage of the 4 standard nucleotides for each sequence.
 
-    sequences = []
+    Input: FASTA file
+    Output: Table of each sequence and the corresponding nucleotide count and percentages
 
-    with open(fasta_file, "r") as file:
-        for line in file:
-            line = line.strip()
-            if line[0] != ">":
-                sequences.append(line)
+    """
+
     
     
 
