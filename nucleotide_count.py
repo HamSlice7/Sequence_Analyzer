@@ -35,10 +35,10 @@ def nucleotide_count(sequence:str) -> dict:
                              'C count': C_count, 
                              'G count': G_count, 
                              'Other': Other, 
-                             '%A': (f'{round(A_count/length_sequence, 3) * 100} %'),
-                             '%T': (f'{round(T_count/length_sequence, 3) * 100} %'),
-                             '%C': (f'{round(C_count/length_sequence, 3) * 100} %'),
-                             '%G': (f'{round(G_count/length_sequence, 3) *100} %')} 
+                             '% A': f'{round(((A_count/length_sequence) * 100),1)} %',
+                             '% T': f'{round(((T_count/length_sequence) * 100), 1)} %',
+                             '% G': f'{round(((G_count/length_sequence) * 100), 1)} %',
+                              '% C': f'{round(((C_count/length_sequence) * 100), 1)} %' } 
                             
 
     
