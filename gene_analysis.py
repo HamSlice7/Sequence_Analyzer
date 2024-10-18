@@ -1,6 +1,6 @@
 class GeneSequence(object):
     
-    def __init__(self, sequence, gene_name, species_name):
+    def __init__(self, sequence:str, gene_name:str, species_name:str):
         self.sequence = sequence
         self.gene_name = gene_name
         self.species_name = species_name
@@ -57,7 +57,3 @@ class GeneSequence(object):
         reverse_gene_complement = reverse_replace_4.upper()
         return reverse_gene_complement
     
-g1 = GeneSequence('GCTA', 'COX1', 'Homo sapiens')
-print(g1.complement())
-print(g1.get_AT())
-print(g1.reverse_complement())
