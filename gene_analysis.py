@@ -1,9 +1,8 @@
 class GeneSequence(object):
     
-    def __init__(self, sequence:str, gene_name:str, species_name:str):
+    def __init__(self, sequence:str):
         self.sequence = sequence
-        self.gene_name = gene_name
-        self.species_name = species_name
+        
         
 
     def complement(self):
