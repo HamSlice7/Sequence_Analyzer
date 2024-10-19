@@ -21,5 +21,5 @@ def sequence_from_fasta(fasta_file) -> dict:
         gene_name_with_sequence = dict(zip(gene_name, sequences))
         
 
-        return gene_name_with_sequence
+    return gene_name_with_sequence
    
