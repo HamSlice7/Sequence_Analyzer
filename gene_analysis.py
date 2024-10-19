@@ -1,7 +1,8 @@
 class GeneSequence(object):
     
-    def __init__(self, sequence:str):
+    def __init__(self, sequence:str, gene_name:str):
         self.sequence = sequence
+        self.gene_name = gene_name
         
         
 

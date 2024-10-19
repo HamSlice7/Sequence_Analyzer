@@ -2,15 +2,19 @@ import sys
 import sequences_from_fasta
 import gene_analysis
 
+"""
+Use GeneSequence class to get data from a fasta file and output a csv file for the user
+"""
+
 fasta_file = sys.argv[1]
 
 sequences = sequences_from_fasta.sequence_from_fasta(fasta_file)
 
 
-for sequence in sequences:
-    gene = gene_analysis.GeneSequence(sequence)
-    print(gene.get_AT())
-    print(gene.get_GC())
+for gene_name,gene_sequences in sequences.items():
+    gene = gene_analysis.GeneSequence(gene_sequences, gene_name)
+    print(f"AT content of {gene_name} is {gene.get_AT()}")
+    print(f"GC content of {gene_name} is {gene.get_GC()}")
 
 
 
