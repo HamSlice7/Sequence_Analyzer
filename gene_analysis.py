@@ -4,6 +4,13 @@ class GeneSequence(object):
         self.sequence = sequence
         self.gene_name = gene_name
         
+    def get_length(self):
+        """
+        Input: instance of the gene sequence class
+        Output: The length of the instance of the gene sequence class
+        """
+        length = len(self.sequence)
+        return length    
         
 
     def complement(self):
